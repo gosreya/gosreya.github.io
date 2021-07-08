@@ -1,28 +1,52 @@
-Oh me gerd
-
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  background-color: lightblue;
+* {
+  box-sizing: border-box;
 }
 
-h1 {
-  color: white;
-  text-align: center;
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
 </head>
 <body>
 
-<h1>My First CSS Example</h1>
-<p>This is a paragraph.</p>
+<h1>Hi! I'm Sreya!</h1>
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <br>
+    <p>I'm a second year undergrad student at the University of Michigan majoring in chemistry and computer science. </p>
+    <p>I'm a research assistant at the Biteen Lab, where my work focuses on bioimaging. I'm also currently an intern in the alliance management branch of the Multiple Myeloma Research Foundation. Finally, I seriously hope this paragraph will be longer soon.</p>
+  </div>
+  <div class="column right" style="background-color:#bbb;">
+    <h2>Experiences</h2>
+    <h2>Code</h2>
+    <h2>Research</h2>
+    <h2>Coursework</h2>
+  </div>
+</div>
 
 </body>
 </html>
