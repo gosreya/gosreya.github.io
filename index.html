@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-* {
-  box-sizing: border-box;
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+
+poof {
+  border-radius: 50%;
 }
 
-body {
-  font-family: Arial, sans-serif;
-}
 
     /* Create four unequal columns that floats next to each other */
+    * {
+      box-sizing: border-box;
+    }
 
     .column {
       float: left;
       padding: 16px;
+      height:
     }
 
     .first-fourth {
-      width: 15%;
+      width: 10%;
     }
 
     .second-fourth {
-      width: 40%;
+      width: 50%;
     }
 
     .third-fourth {
-      width: 35%;
+      width: 30%;
     }
 
     .fourth-fourth {
@@ -41,63 +49,99 @@ body {
       clear: both;
     }
     
-    /* font size */
-    
-    div.a {
-       font-size: 250%;
+    /* Hover links */
+    a:hover {
+      color: Salmon;
+      font-weight: 900;
     }
     
-    div.b {
-       font-size: 200%;
+    b:hover {
+      color: Gold;
+      font-weight: 900;
     }
     
-    div.c {
-       font-size: 150%;
+    c:hover {
+      color: MediumSpringGreen;
+      font-weight: 900;
     }
-
+    
+    d:hover {
+      color: DarkTurquoise;
+      font-weight: 900;
+    }
+    
+    /* color */
+    e {color: PaleTurquoise }
+    
+    /* underline */
+    f:hover {text-decoration: underline;}
+    
 
 </style>
-</head>
 
 <body>
-    <div class="row">
-        <div class="column first-fourth" style="background-color:#aaa;">
 
-           </div>
-        <div class="column second-fourth" style="background-color:#bbb;">
-           <div class = a>
-                   <h1> Hi! I'm Sreya!</h1>
-           </div>
-        <br>
-            <div class = c>
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-30 w3-dark-gray w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <!-- <h1 class="w3-center w3-text-grey"><b>Jane & John</b></h1> -->
+    
+    <body>
+    <div class="row">
+        <div class="column first-fourth" >  </div>
+        <div class="column second-fourth" >
+                <br>
+                   <h1> Hi! I'm Sreya Gogineni! </h1>
+                <br>
+            <div>
             <p>I'm a second year undergrad student at the University of Michigan majoring in chemistry and computer science. </p>
             <p>I'm a research assistant at the Biteen Lab, where my work focuses on bioimaging. I'm also currently an intern in the alliance management branch of the Multiple Myeloma Research Foundation. Finally, I seriously hope this paragraph will be longer soon.</p>
             </div>
-           </div>
-      <div class="column third-fourth" style="background-color:#ccc;">
+            
+            <!-- resume shit and else -->
+                 <p> <e>
+                    <br>
+                    <f>resume</f> &nbsp &nbsp <f>linkedin</f> &nbsp &nbsp <f>github</f> &nbsp &nbsp gosreya@umich.edu
+                 </e> </p>
+      </div>
+      <div class="column third-fourth" >
                 <br>
                 <br>
                 <br>
                 <br>
                 <br>
-           <div class = b>
-              <h2> Experiences</h2>
+           <e>
+              <h2> &nbsp &nbsp <a> Experiences </a> </h2>
 
-              <h2> Code</h2>
+              <h2> &nbsp &nbsp <b> Code </b> </h2>
 
-              <h2> Research</h2>
+              <h2> &nbsp &nbsp <c> Research </c> </h2>
 
-              <h2> Coursework</h2>
-           </div>
+              <h2> &nbsp &nbsp <d> Coursework </d> </h2>
+           </e>
+      </div>
 
-          </div>
-
-      <div class="column fourth-fourth" style="background-color:#ddd;">
-
-          </div>
+      <div class="column fourth-fourth" > </div>
   
     </div>
+    
+  </div>
+</div>
 
+
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-blue w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
 </body>
 </html>
