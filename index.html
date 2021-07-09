@@ -7,19 +7,31 @@
   box-sizing: border-box;
 }
 
-/* Create two unequal columns that floats next to each other */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Create four unequal columns that floats next to each other */
+
 .column {
   float: left;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 16px;
 }
 
-.left {
-  width: 60%;
+.first-fourth {
+  width: 15%;
 }
 
-.right {
+.second-fourth {
   width: 40%;
+}
+
+.third-fourth {
+  width: 35%;
+}
+
+.fourth-fourth {
+  width: 10%;
 }
 
 /* Clear floats after the columns */
@@ -28,25 +40,72 @@
   display: table;
   clear: both;
 }
+
+/* button */
+
 </style>
 </head>
 <body>
 
-<h1>Hi! I'm Sreya!</h1>
+
+
 
 <div class="row">
-  <div class="column left" style="background-color:#aaa;">
+  <div class="column first-fourth" style="background-color:#aaa;">
+
+  </div>
+  <div class="column second-fourth" style="background-color:#bbb;">
+    <h1> Hi! I'm Sreya!</h1>
     <br>
     <p>I'm a second year undergrad student at the University of Michigan majoring in chemistry and computer science. </p>
     <p>I'm a research assistant at the Biteen Lab, where my work focuses on bioimaging. I'm also currently an intern in the alliance management branch of the Multiple Myeloma Research Foundation. Finally, I seriously hope this paragraph will be longer soon.</p>
   </div>
-  <div class="column right" style="background-color:#bbb;">
-    <h2>Experiences</h2>
-    <h2>Code</h2>
-    <h2>Research</h2>
-    <h2>Coursework</h2>
+  <div class="column third-fourth" style="background-color:#ccc;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.btn {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0px 5px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius:50%
+}
+
+.btn:hover {opacity: 0.6}
+</style>
+</head>
+
+<body>
+
+
+
+    <h2> <button class="btn"></button> Experiences</h2>
+
+    <h2> <button class="btn"></button> Code</h2>
+    
+    <h2> <button class="btn"></button> Research</h2>
+  
+    <h2> <button class="btn"></button> Coursework</h2>
   </div>
+  <div class="column fourth-fourth" style="background-color:#ddd;">
+
+  </div>
+  
 </div>
+
+
 
 </body>
 </html>
