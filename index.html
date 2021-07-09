@@ -1,81 +1,150 @@
 <!DOCTYPE html>
 <html>
-<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body {
-  font-family: "Lato", sans-serif;
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+
+poof {
+  border-radius: 50%;
 }
 
-.sidepanel  {
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  height: 250px;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
 
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+    /* Create four unequal columns that floats next to each other */
+    * {
+      box-sizing: border-box;
+    }
 
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
+    .column {
+      float: left;
+      padding: 16px;
+      height:
+    }
 
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-}
+    .first-fourth {
+      width: 10%;
+    }
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
+    .second-fourth {
+      width: 50%;
+    }
 
-.openbtn:hover {
-  background-color:#444;
-}
+    .third-fourth {
+      width: 30%;
+    }
+
+    .fourth-fourth {
+      width: 10%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Hover links */
+    a:hover {
+      color: Salmon;
+      font-weight: 900;
+    }
+    
+    r:hover {
+      color: Gold;
+      font-weight: 900;
+    }
+    
+    c:hover {
+      color: MediumSpringGreen;
+      font-weight: 900;
+    }
+    
+    d:hover {
+      color: DarkTurquoise;
+      font-weight: 900;
+    }
+    
+    /* color */
+    e {color: PaleTurquoise }
+    
+    /* underline */
+    f:hover {text-decoration: underline;}
+    
+    /* bold */
+    m {font-weight: 1000;}
+    
+
 </style>
-</head>
+
 <body>
 
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-30 w3-dark-gray w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <!-- <h1 class="w3-center w3-text-grey"><b>Jane & John</b></h1> -->
+    
+    <body>
+    <div class="row">
+        <div class="column first-fourth" >  </div>
+        <div class="column second-fourth" >
+                <br>
+                   <h1> <m> Hi! I'm Sreya Gogineni! </m> </h1>
+                <br>
+            <div>
+            <p>I'm a second year undergrad student at the University of Michigan majoring in chemistry and computer science. </p>
+            <p>I'm a research assistant at the Biteen Lab, where my work focuses on bioimaging. I'm also currently an intern in the alliance management branch of the Multiple Myeloma Research Foundation. Finally, I seriously hope this paragraph will be longer soon.</p>
+            </div>
+            
+            <!-- resume shit and else -->
+                 <p> <e>
+                    <br>
+                    <f>resume</f> &nbsp &nbsp <f>linkedin</f> &nbsp &nbsp <f>github</f> &nbsp &nbsp gosreya@umich.edu
+                 </e> </p>
+      </div>
+      <div class="column third-fourth" >
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+           <e>
+              <h2> &nbsp &nbsp <a> Experiences </a> </h2>
+
+              <h2> &nbsp &nbsp <r> Code </r> </h2>
+
+              <h2> &nbsp &nbsp <c> Research </c> </h2>
+
+              <h2> &nbsp &nbsp <d> Coursework </d> </h2>
+           </e>
+      </div>
+
+      <div class="column fourth-fourth" > </div>
+  
+    </div>
+    
+  </div>
 </div>
 
-<button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>
 
 
-<script>
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
-}
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-blue w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <img src="Picture_of_Me" alt="Sreya Gogineni">
+  </div>
+</div>
 
-function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
-}
-</script>
-   
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
 </body>
 </html>
