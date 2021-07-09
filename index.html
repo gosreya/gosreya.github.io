@@ -9,11 +9,53 @@
 body,h1,h2{font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 p {line-height: 2}
+    /* image rounding */
+    
+    img {
+          border-radius: 50%;
+        border: 5px solid #616161;
+    }
 
-poof {
-  border-radius: 50%;
-}
+    /* navigation menu */
+    
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
 
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
 
     /* Create four unequal columns that floats next to each other */
     * {
@@ -27,11 +69,11 @@ poof {
     }
 
     .first-fourth {
-      width: 10%;
+      width: 20%;
     }
 
     .second-fourth {
-      width: 50%;
+      width: 40%;
     }
 
     .third-fourth {
@@ -86,12 +128,33 @@ poof {
 
 <!-- About / Jane And John -->
 <div class="w3-container w3-padding-30 w3-dark-gray w3-grayscale-min" id="us">
-  <div class="w3-content">
+  <!--div class="w3-content"-->
     <!-- <h1 class="w3-center w3-text-grey"><b>Jane & John</b></h1> -->
     
     <body>
     <div class="row">
-        <div class="column first-fourth" >  </div>
+        <div class="column first-fourth" >
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Experiences</a>
+          <a href="#">Code</a>
+          <a href="#">Research</a>
+          <a href="#">Coursework</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+      </div>
         <div class="column second-fourth" >
                 <br>
                    <h1> <m> Hi! I'm Sreya Gogineni! </m> </h1>
@@ -136,7 +199,7 @@ poof {
 <!-- Wedding information -->
 <div class="w3-container w3-padding-64 w3-pale-blue w3-grayscale-min w3-center" id="wedding">
   <div class="w3-content">
-    <img src="Picture_of_Me" alt="Sreya Gogineni">
+    <img src="Picture_of_Me.png" alt="Sreya Gogineni">
   </div>
 </div>
 
