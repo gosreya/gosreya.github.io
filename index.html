@@ -17,15 +17,15 @@ p {line-height: 2}
         border-radius: 50%;
         border: 5px solid #616161;
         float: left;
-        shape-outside: url(Picture_of_Me.png);
-        margin-right: 20px;
-        shape-margin: 20px;
+        shape-outside: circle();
+        margin-right: 30px;
     }
     
     /* left*/
     
     left {
-          text-align: justify;
+         text-align: left;
+
     }
 
     /* navigation menu */
@@ -103,6 +103,31 @@ p {line-height: 2}
       clear: both;
     }
     
+    /* Another table */
+        
+      .col {
+        float: left;
+      }
+
+      .left {
+        width: 20%;
+      }
+      
+      .right {
+        width: 28%;
+      }
+
+      .middle {
+        width: 52%;
+      }
+      
+      /* Clear floats after the columns */
+      .ro:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
     /* Hover links */
     a:hover {
       color: Salmon;
@@ -230,13 +255,25 @@ p {line-height: 2}
 
 
 <!-- Wedding information -->
-<div class="w3-container w3-padding-64 w3-pale-blue w3-grayscale-min w3-center" id="wedding">
-  <div class="w3-content">
-
-    <img src="Picture_of_Me.png" alt="Sreya Gogineni" style="object-fit: cover; object-position: 100% 0;">
-
-        <left> <p> <br> <br> My hometown is Troy, Michigan. I like pencil drawing <br> and making graphic art and sometimes writing comics. <br> I also love trivia and doing deep Wikipedia dives. <br> My favorite weather is light rain and my favorite food is soup, <br> though both are old foes to glasses-wearers like myself. </p> </left>
+<div class="w3-container w3-padding-24 w3-pale-blue w3-grayscale-min w3-center" id="wedding">
+ 
     
+        <!-- table tennis -->
+        
+          <div class="row">
+            <div class="column left"> </div>
+            <div class="column middle">
+            
+                
+                <img src="Picture_of_Me.png" alt="Sreya Gogineni" style="object-fit: cover; object-position: 100% 0;">
+                
+                        <left> <p> <br> My hometown is Troy, Michigan. I like pencil drawing and making graphic art and sometimes writing comics. I also love trivia and doing deep Wikipedia dives. My favorite weather is light rain and my favorite food is soup, though both are old foes to glasses-wearers like myself. <br> <br> </p> </left>
+            
+            </div>
+            <div class="column right" </div>
+         </div>
+
+
   </div>
 </div>
 
