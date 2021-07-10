@@ -12,8 +12,20 @@ p {line-height: 2}
     /* image rounding */
     
     img {
-          border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
         border: 5px solid #616161;
+        float: none;
+        shape-outside: url(Picture_of_Me.png);
+        margin-right: 20px;
+        shape-margin: 20px;
+    }
+    
+    /* left*/
+    
+    left {
+          text-align: justify;
     }
 
     /* navigation menu */
@@ -135,12 +147,7 @@ p {line-height: 2}
     
     /* background */
     body { background-color: #616161; }
-    
-    /* profile */
-    .profile {
-          column-count: 2;
-          column-gap: 0px;
-    }
+   
     
 </style>
 
@@ -225,12 +232,11 @@ p {line-height: 2}
 <!-- Wedding information -->
 <div class="w3-container w3-padding-64 w3-pale-blue w3-grayscale-min w3-center" id="wedding">
   <div class="w3-content">
-    <div class = "profile">
-    <img src="Picture_of_Me.png" alt="Sreya Gogineni" style="width:250px;height:250px;object-fit: cover; object-position: 100% 0;">
+  
 
-        <p> <br> <br> My hometown is Troy, Michigan. I like pencil drawing <br> and making graphic art and sometimes writing comics. <br> I also love trivia and doing deep Wikipedia dives. <br> My favorite weather is light rain and my favorite food is soup, <br> though both are old foes to glasses-wearers like myself. </p>
+    <img src="Picture_of_Me.png" alt="Sreya Gogineni" style="object-fit: cover; object-position: 100% 0;">
 
-    </div>
+        <left> <p> <br> <br> My hometown is Troy, Michigan. I like pencil drawing <br> and making graphic art and sometimes writing comics. <br> I also love trivia and doing deep Wikipedia dives. <br> My favorite weather is light rain and my favorite food is soup, <br> though both are old foes to glasses-wearers like myself. </p> </left>
     
   </div>
 </div>
