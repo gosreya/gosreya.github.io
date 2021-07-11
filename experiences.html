@@ -48,8 +48,40 @@
               .sidenav a {font-size: 18px;}
             }
 
+    /* columns */
 
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      padding: 16px;
+      height:
+    }
 
+    .first-fourth {
+      width: 20%;
+    }
+
+    .second-fourth {
+      width: 80%;
+    }
+
+    .third-fourth {
+      width: 0%;
+    }
+
+    .fourth-fourth {
+      width: 0%;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
 </style>
 
@@ -81,8 +113,13 @@
     
     <!-- Wedding information -->
     <div class="w3-container w3-padding-24 w3-pale-blue w3-grayscale-min w3-center" id="wedding">
-        <h1>Work, Volunteering, and Project Experiences <h1>
-        <p> AAAGGHHH!!! Oreno tote okino specialu nindo ramen kono no jinjo henga!!!! OOHHHHHHHHH. YURUSANEEEEE. ZETE YURUSANETEBAIYOOO. Tajyuu kage bunshIN NO JUTSUUUUU!!!! ORAAAAAAA. NISEMON DOKUDAAAA. NISEMON DATEKOIIIII. </p>
+        <div class="row">
+            <div class="column first-fourth" > </div>
+            <div class="column second-fourth" >
+                <h1>Work, Volunteering, and Project Experiences <h1>
+                <p> AAAGGHHH!!! Oreno tote okino specialu nindo ramen kono no jinjo henga!!!! OOHHHHHHHHH. YURUSANEEEEE. ZETE YURUSANETEBAIYOOO. Tajyuu kage bunshIN NO JUTSUUUUU!!!! ORAAAAAAA. NISEMON DOKUDAAAA. NISEMON DATEKOIIIII. </p>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
