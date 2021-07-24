@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head> <!--HEAD -->
+    <title>Photo Checkout At Walmart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="shrooms_copy">
+</head> <!-- END HEAD -->
+        
+<style> /* STYLE */
+    @import url('https.://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        /* background: #b1eeee */
+        background: #8deee5;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    
+    /* IMAGE GALLERY */
+
+    .fadein img {
+        position:absolute;
+        -webkit-animation-name: fade;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 18s;
+        animation-name: fade;
+        animation-iteration-count: infinite;
+        animation-duration: 18s;
+    }
+    @-webkit-keyframes fade {
+        0% {opacity: 0;}
+        20% {opacity: 1;}
+        33% {opacity: 1;}
+        43% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+    @keyframes fade {
+        0% {opacity: 0;}
+        20% {opacity: 1;}
+        33% {opacity: 1;}
+        43% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+    
+    #del1 {
+        -webkit-animation-delay: -0s;
+    }
+    #del2 {
+        -webkit-animation-delay: -12s;
+    }
+    #del3 {
+        -webkit-animation-delay: -6s;
+    }
+    /* IMAGE GALLERY */
+    
+    section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+    
+    img {
+        position: absolute;
+        pointer-events: none;
+        white-space: none;
+    }
+    
+    
+    #title {
+        position: absolute;
+        color: #0f6479;
+        white-space: nowrap;
+        font-size: 17vh;
+        padding-top: 220px;
+        padding-left: 265px;
+        z-index: 10;
+    }
+    
+    #subtitle {
+        position: absolute;
+        color: #f98a8a;
+        white-space: nowrap;
+        font-size: 4vh;
+        padding-top: 530px;
+        padding-left: 273px;
+        z-index: 10;
+    }
+    
+    /* text for section 2 */
+    #bighead {
+        position: absolute;
+        color: #0f6479;
+        white-space: nowrap;
+        font-size: 4vh;
+        padding-top: 160px;
+        padding-left: 100px;
+    }
+    
+    #loony {
+        position: absolute;
+        color:
+        white-space: nowrap;
+        font-size: 2.7vh;
+        padding-top: 280px;
+        padding-left: 100px;
+        line-height: 25px;
+    }
+    
+    /* text for section 3 */
+    #baghead {
+        position: absolute;
+        color: #0f6479;
+        white-space: nowrap;
+        font-size: 4vh;
+        padding-top: 470px;
+        padding-left: 800px;
+    }
+    
+    #roony {
+        position: absolute;
+        color:
+        white-space: nowrap;
+        font-size: 2.7vh;
+        padding-top: 690px;
+        padding-left: 800px;
+        line-height: 25px;
+    }
+    
+    .gooly {
+        background: #eee;
+    }
+    
+    /* positioning for slideshows*/
+    #feather {
+        position: absolute;
+        padding-top: 100px;
+        padding-left: 730px;
+    }
+    
+    #wither {
+        position: absolute;
+        padding-top: 400px;
+        padding-left: 100px;
+    }
+    
+    /* how it works section */
+    #holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 500px;
+        padding-bottom: 500px; */
+        justify: center;
+    }
+    
+    /* images */
+    #milk {
+        object-fit: contain;
+        /* left: 0px; */
+        width:350px;
+        z-index: 9;
+    }
+    #apple {
+
+        object-fit: contain;
+        left: 600px;
+        width:280px;
+        z-index: 9;
+    }
+    #pencils {
+        object-fit: contain;
+        /* left: 420px; */
+        width:270px;
+        z-index: 9;
+    }
+    #pupbone {
+        object-fit: contain;
+        /* left: 970px; */
+        width:280px;
+        z-index: 9;
+    }
+    
+    .parallax {
+      perspective: 1px;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      font-size: 200%;
+    }
+    
+    .parallax__layer {
+      position: absolute;
+      padding: 100vh 0;
+    }
+    
+    .parallax__layer--base {
+        justify: center;
+      transform: translateZ(0);
+    }
+    .parallax__layer--back {
+        justify: center;
+      transform: translateZ(-1px);
+    }
+    
+    .bruh {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    
+</style> <!-- END STYLE -->
+
+<body class="parallax"> <!-- BODY -->
+    
+    <!--img src="blurry_milk.png" alt="milk carton" id="milk" style="transform:rotate(60deg);">
+    <img src="pencils.png" alt="colored pencils" id="pencils" style="transform:rotate(40deg);">
+    <img src="pupbone.png" alt="dog bone" id="pupbone" style="transform:rotate(120deg);"-->
+    <!--img src="smolapple.png" alt="golden apple" id="apple"-->
+        
+        <div class="parallax__layer parallax__layer--base">
+            <h1> violet </h1>
+        </div>
+        
+        <div class="parallax__layer parallax__layer--back">
+            <h1> evergarden </h1>
+        </div>
+        
+    <section>
+        <!--h1 id="title">Phot&nbsp&nbspgraphic<br>Checkout</h1>
+        <p id="subtitle">The future of shopping: <br> identify, scan, and checkout products <br> just by taking a picture. </p-->
+
+        
+    </section>
+    
+    <!--section class="gooly">
+        <h1 id="bighead"> With photo checkout,<br>paying for your items at the <br> store becomes a breeze </h1>
+        <p id="loony"> Instead of hunting for barcodes and scanning your <br> items one by one, all you need to do is take a picture of <br> your shopping cart. Voila! The products "move" from your <br> physical cart to your virtual cart, and once you approve <br> your list, paying is as easy as pressing a button. </p>
+        
+        <div id="feather" class="fadein">
+            <img id="del3" src="shrooms_copy" width="630" height="400">
+            <img id="del2" src="Picture_of_Me.png" width="630" height="400">
+            <img id="del1" src="arctik_copy.png" width="630" height="400">
+        </div>
+        
+        
+    </section>
+    
+    <section>
+        <h1 id="baghead"> Photo checkout brings the <br> experience of browsing in a <br> 3D space to wherever you are </h1>
+        <p id="roony"> With the ability to pull up a product page with just <br> your camera, photographic checkout redefines the space <br> around you, and the way you view shopping itself. <br> Restocking on items can be as simple as taking a picture <br> in your fridge, and new finds can present themselves <br> virtually anywhere. </p>
+        
+        <div id="wither" class="fadein">
+            <img id="del3" src="shrooms_copy" width="630" height="400">
+            <img id="del2" src="Picture_of_Me.png" width="630" height="400">
+            <img id="del1" src="arctik_copy.png" width="630" height="400">
+        </div>
+    </section-->
+    
+    <section>
+        <h1 id="holder"> How it works or something </h1>
+    </section>
+    
+    
+    <!--script>
+        let apple = document.getElementById('apple');
+        /*
+        let milk = document.getElementById('milk');
+        let pencils = document.getElementById('pencils');
+        let pupbone = document.getElementById('pupbone');
+        */
+        
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            apple.style.top = 1.5*value + 'px';
+            /*
+            milk.style.top = 0.65 * value + 'px';
+            pencils.style.top = 0.70 * value + 'px';
+            pupbone.style.top = 0.80 * value + 'px';
+             */
+        })
+    </script-->
+    
+</body> <!-- END BODY -->
+            
+</html>
+
+<!-- %ArDSCspo)@a!FV5gcOR&XEo -->

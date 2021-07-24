@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head> <!--HEAD -->
+    <title>Photo Checkout At Walmart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="shrooms_copy">
+<head>
+    
+<!-- STYLE -->
+<style>
+    
+  /* General structure */
+  
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+    
+    body {
+        background: #8deee5;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+  /* Parallax */
+
+    .parallax {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-perspective: 5px;
+        perspective: 5px;
+    }
+
+    .parallax__layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .parallax__layer--base {
+        -webkit-transform: translateZ(0) scale(1);
+        transform: translateZ(0) scale(1);
+    }
+
+    .parallax__layer--acca {
+        -webkit-transform: translateZ(1px) scale(0.8);
+        transform: translateZ(1px) scale(0.8);
+    }
+    
+    .parallax__layer--acca-half {
+        -webkit-transform: translateZ(1.5px) scale(0.7);
+        transform: translateZ(1.5px) scale(0.7);
+    }
+    
+    .parallax__layer--bacca {
+        -webkit-transform: translateZ(2px) scale(0.6);
+        transform: translateZ(2px) scale(0.6);
+    }
+    
+    .parallax__layer--bacca-half {
+        -webkit-transform: translateZ(2.5px) scale(0.5);
+        transform: translateZ(2.5px) scale(0.5);
+    }
+    
+    .parallax__layer--soda {
+      -webkit-transform: translateZ(3px) scale(0.4);
+      transform: translateZ(3px) scale(0.4);
+    }
+    
+    .parallax__layer--cracka {
+      -webkit-transform: translateZ(-2px) scale(1.4);
+      transform: translateZ(-2px) scale(1.4);
+    }
+
+   /* centre the content in the parallax layers */
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+    
+    /* image gallery  */
+    
+    .fadein-1 img {
+        position:absolute;
+        -webkit-animation-name: fade-1;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 28s;
+        animation-name: fade-1;
+        animation-iteration-count: infinite;
+        animation-duration: 28s;
+    }
+    @-webkit-keyframes fade-1 {
+        0% {opacity: 1;}
+        22% {opacity: 1;}
+        25% {opacity: 0;}
+        97% {opacity: 0;}
+    }
+    @keyframes fade-1 {
+        0% {opacity: 1;}
+        22% {opacity: 1;}
+        25% {opacity: 0;}
+        97% {opacity: 0;}
+    }
+    
+    .del1 {
+        -webkit-animation-delay: -0s;
+    }
+    .del2 {
+        -webkit-animation-delay: -21s;
+    }
+    .del3 {
+        -webkit-animation-delay: -14s;
+    }
+    .del4 {
+        -webkit-animation-delay: -7s;
+    }
+    
+    .fadein-2 img {
+        position:absolute;
+        -webkit-animation-name: fade-2;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 21s;
+        animation-name: fade-2;
+        animation-iteration-count: infinite;
+        animation-duration: 21s;
+    }
+    @-webkit-keyframes fade-2 {
+         0% {opacity: 1;}
+         30% {opacity: 1;}
+         33% {opacity: 0;}
+         97% {opacity: 0;}
+    }
+    @keyframes fade-2 {
+        0% {opacity: 1;}
+        30% {opacity: 1;}
+        33% {opacity: 0;}
+        97% {opacity: 0;}
+    }
+    
+    
+    /* landing */
+    #title {
+        position: absolute;
+        color: #0f6479;
+        white-space: nowrap;
+        font-size: 17vh;
+        padding-top: 220px;
+        padding-left: 265px;
+        z-index: 1;
+    }
+    
+    #subtitle {
+        position: absolute;
+        color: #f98a8a;
+        white-space: nowrap;
+        font-size: 4vh;
+        padding-top: 530px;
+        padding-left: 273px;
+        z-index: 1;
+    }
+    
+    /* section 2 */
+    #bighead {
+        position: absolute;
+        color: #0f6479;
+        white-space: nowrap;
+        font-size: 4vh;
+        padding-top: 160px;
+        padding-left: 100px;
+    }
+    
+    #loony {
+        position: absolute;
+        color:
+        white-space: nowrap;
+        font-size: 2.7vh;
+        padding-top: 280px;
+        padding-left: 100px;
+        line-height: 25px;
+    }
+    
+    .slide-1 {
+        position: absolute;
+        padding-top: 40px;
+        padding-left: 830px;
+    }
+
+    /* text for section 3*/
+    #baghead {
+        position: absolute;
+        color: #0f6479;
+        white-space: nowrap;
+        font-size: 4vh;
+        padding top: 400px;
+        padding-left: 760px;
+    }
+    
+    #roony {
+        position: absolute;
+        white-space: nowrap;
+        font-size: 2.7vh;
+        padding-top: 240px;
+        padding-left: 760px;
+        line-height: 25px;
+    }
+    
+    .slide-2 {
+        position: absolute;
+        padding-top: 0px;
+        padding-left: 130px;
+    }
+    
+    /* text for last */
+    #moony {
+        position: absolute;
+        color: #0f6479;
+        white-space: nowrap;
+        font-size: 4vh;
+        padding-left: 100px;
+    }
+    
+    /* padding */
+    #landing {
+        padding-bottom: 100px;
+    }
+    #sec1 {
+        padding-top: 0px;
+        padding-bottom: 500px;
+    }
+    #sec2 {
+        padding-top: 500px;
+        padding-bottom: 800px;
+    }
+    #final {
+        padding-top: 200px;
+        padding-bottom: 700px;
+    }
+    
+    
+    /* images */
+    #milk {
+        -webkit-transform: translateY(1300px) translateX(-250px) rotate(60deg) scale(40%);
+        tranform: translateY(1300px) translateX(-250px) rotate(60deg) scale(40%);
+
+    }
+    #pencils {
+        -webkit-transform: translateY(900px) translateX(300px) rotate(150deg) scale(27%);
+        tranform: translateY(900px) translateX(300px) rotate(150deg) scale(27%);
+    }
+    #pupbone {
+        -webkit-transform: translateY(1000px) translateX(600px) rotate(120deg) scale(25%);
+        tranform: translateY(1200px) translateX(600px) rotate(120deg) scale(25%);
+    }
+    #apple {
+        -webkit-transform: translateY(1400px) translateX(0px) scale(25%);
+        tranform: translateY(1400px) translateX(0px) scale(25%);
+    }
+    #polish {
+        -webkit-transform: translateY(1100px) translateX(-300px) rotate(350deg) scale(30%);
+        tranform: translateY(1100px) translateX(-300px) rotate(350deg) scale(30%);
+    }
+    #phone {
+        -webkit-transform: translateY(-510px) translateX(173px) rotate(350deg) scale(37%);
+        tranform: translateY(-510px) translateX(173px) rotate(350deg) scale(37%);
+        z-index: -1;
+    }
+    #front-phone {
+        -webkit-transform: translateY(300px) translateX(173px) rotate(0deg) scale(70%);
+        tranform: translateY(300px) translateX(173px) rotate(0deg) scale(70%);
+    }
+    #rc {
+        -webkit-transform: translateY(1800px) translateX(500px) rotate(0deg) scale(40%);
+        tranform: translateY(1800px) translateX(500px) rotate(0deg) scale(40%);
+    }
+    
+    /* spicy slideshow animation */
+    
+    /* two dots */
+        .dot {
+          position: absolute;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: ghostwhite;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+    
+        #dot1 {
+            opacity: 0.4;
+            -webkit-transform: translateY(485px) translateX(190px);
+            transform: translateY(485px) translateX(190px);
+        }
+        #dot2 {
+            opacity: 0.4;
+            -webkit-transform: translateY(485px) translateX(210px);
+            transform: translateY(485px) translateX(210px);
+        }
+        #dot3 {
+            opacity: 0.4;
+            -webkit-transform: translateY(485px) translateX(230px);
+            transform: translateY(485px) translateX(230px);
+        }
+        #dot4 {
+            opacity: 0.4;
+            -webkit-transform: translateY(485px) translateX(250px);
+            transform: translateY(485px) translateX(250px);
+        }
+        #dot5 {
+            opacity: 1;
+            
+            -webkit-animation-name: fly;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-duration: 28s;
+            animation-name: fly;
+            animation-iteration-count: infinite;
+            animation-duration: 28s;
+        }
+    
+        @-webkit-keyframes fly {
+            0% {transform: translateY(485px) translateX(190px)}
+            22% {transform: translateY(485px) translateX(190px)}
+            25% {transform: translateY(485px) translateX(210px)}
+            47% {transform: translateY(485px) translateX(210px)}
+            50% {transform: translateY(485px) translateX(230px)}
+            72% {transform: translateY(485px) translateX(230px)}
+            75% {transform: translateY(485px) translateX(250px)}
+            97% {transform: translateY(485px) translateX(250px)}
+            100% {transform: translateY(485px) translateX(190px)}
+        }
+        @keyframes fly {
+            0% {transform: translateY(485px) translateX(190px)}
+            22% {transform: translateY(485px) translateX(190px)}
+            25% {transform: translateY(485px) translateX(210px)}
+            47% {transform: translateY(485px) translateX(210px)}
+            50% {transform: translateY(485px) translateX(230px)}
+            72% {transform: translateY(485px) translateX(230px)}
+            75% {transform: translateY(485px) translateX(250px)}
+            97% {transform: translateY(485px) translateX(250px)}
+            100% {transform: translateY(485px) translateX(190px)}
+        }
+    
+    /* three dots */
+    #d0t1 {
+        opacity: 0.4;
+        -webkit-transform: transform: translateY(515px) translateX(220px);
+        transform: translateY(515px) translateX(220px);
+    }
+    #d0t2 {
+        opacity: 0.4;
+        -webkit-transform: translateY(515px) translateX(240px);
+        transform: translateY(515px) translateX(240px);
+    }
+    #d0t3 {
+        opacity: 0.4;
+        -webkit-transform: translateY(515px) translateX(260px);
+        transform: translateY(515px) translateX(260px);
+    }
+    #d0t4 {
+        opacity: 1;
+        
+        -webkit-animation-name: fly1;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 21s;
+        animation-name: fly1;
+        animation-iteration-count: infinite;
+        animation-duration: 21s;
+    }
+
+    @-webkit-keyframes fly1 {
+        0% {transform: translateY(515px) translateX(220px)}
+        30% {transform: translateY(515px) translateX(220px)}
+        
+        33% {transform: translateY(515px) translateX(240px)}
+        63% {transform: translateY(515px) translateX(240px)}
+        
+        66% {transform: translateY(515px) translateX(260px)}
+        96% {transform: translateY(515px) translateX(260px)}
+        
+        100% {transform: translateY(515px) translateX(220px)}
+    }
+    @keyframes fly1 {
+        0% {transform: translateY(515px) translateX(220px)}
+        30% {transform: translateY(515px) translateX(220px)}
+        
+        33% {transform: translateY(515px) translateX(240px)}
+        63% {transform: translateY(515px) translateX(240px)}
+        
+        66% {transform: translateY(515px) translateX(260px)}
+        96% {transform: translateY(515px) translateX(260px)}
+        
+        100% {transform: translateY(515px) translateX(220px)}
+    }
+    
+    /* orb*/
+        #circle {
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background: ghostwhite;
+          border-radius: 50%;
+          opacity: 0.5;
+          
+          -webkit-animation-name: float-1;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-duration: 28s;
+          animation-name: float-1;
+          animation-iteration-count: infinite;
+          animation-duration: 28s;
+        }
+        @-webkit-keyframes float-1 {
+            0% { transform: translateY(0px) translateX(-70px)}
+            22% { transform: translateY(0px) translateX(-70px)}
+            25% { transform: translateY(110px) translateX(75px) scale(60%);}
+            47% { transform: translateY(110px) translateX(75px) scale(60%);}
+            50% { transform: translateY(60px) translateX(80px);}
+            72%  { transform: translateY(60px) translateX(80px);}
+            75%  { transform: translateY(-25px) translateX(128px) scale(90%);}
+            97%  { transform: translateY(-25px) translateX(128px) scale(90%);}
+            100% { transform: translateY(0px) translateX(-70px)}
+        }
+        @keyframes float-1 {
+            0% { transform: translateY(0px) translateX(-70px)}
+            22% { transform: translateY(0px) translateX(-70px)}
+            25% { transform: translateY(110px) translateX(75px) scale(60%);}
+            47% { transform: translateY(110px) translateX(75px) scale(60%);}
+            50% { transform: translateY(60px) translateX(80px);}
+            72%  { transform: translateY(60px) translateX(80px);}
+            75%  { transform: translateY(-25px) translateX(128px) scale(90%);}
+            97%  { transform: translateY(-25px) translateX(128px) scale(90%);}
+            100% { transform: translateY(0px) translateX(-70px)}
+        }
+    
+    /* missing mango */
+        #mango {
+          position: absolute;
+          
+          -webkit-animation-name: missing;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-duration: 21s;
+          animation-name: missing;
+          animation-iteration-count: infinite;
+          animation-duration: 21s;
+        }
+        @-webkit-keyframes missing {
+            0% {opacity: 0%}
+            1.8% {opacity: 100%}
+            3.4% {opacity: 100%}
+            3.8% {opacity: 0%}
+            
+            5.6% {opacity: 100%}
+            6.2% {opacity: 100%}
+            7.6% {opacity: 0%}
+            
+            9.4% {opacity: 100%}
+            10% {opacity: 100%}
+            11.4% {opacity: 0%}
+            
+            100% {opacity: 0%}
+        }
+        @keyframes missing {
+            0% {opacity: 0%}
+            1.8% {opacity: 100%}
+            2.8% {opacity: 100%}
+            3.8% {opacity: 0%}
+            
+            5.6% {opacity: 100%}
+            6.6% {opacity: 100%}
+            7.6% {opacity: 0%}
+            
+            9.4% {opacity: 100%}
+            10.4% {opacity: 100%}
+            11.4% {opacity: 0%}
+            
+            100% {opacity: 0%}
+        }
+    
+    
+
+</style>
+
+<body>
+    
+    <div class="parallax">
+        
+        <div class="parallax__layer parallax__layer--soda">
+            <img src="blurry_milk.png" alt="milk carton" id="milk">
+        </div>
+        
+        <div class="parallax__layer parallax__layer--bacca">
+            <img src="pencils.png" alt="colored pencils" id="pencils">
+        </div>
+        
+        <div class="parallax__layer parallax__layer--bacca-half">
+            <img src="pupbone.png" alt="dog bone" id="pupbone">
+        </div>
+            
+        <div class="parallax__layer parallax__layer--bacca-half">
+            <img src="smolapple.png" alt="golden apple" id="apple">
+        </div>
+        
+        <div class="parallax__layer parallax__layer--acca-half">
+            <img src="nail-polish.png" alt="nail polish" id="polish">
+        </div>
+        
+        <div class="parallax__layer parallax__layer--bacca-half">
+            <img src="rc.png" alt="video game controller" id="rc">
+        </div>
+        
+        
+        <div id="landing">
+            <h1 id="title">Phot&nbsp&nbspgraphic<br>Checkout</h1>
+            <p id="subtitle">The future of shopping: <br> identify, scan, and checkout products <br> just by taking a picture. </p>
+            <img src="rough-pegacorn.png" alt="phone case" id="phone">
+            
+        </div>
+    
+        <div id="sec1">
+            <h1 id="bighead"> With photo checkout,<br>paying for your items at the <br> store becomes a breeze </h1>
+            <p id="loony"> Instead of hunting for barcodes and scanning your <br> items one by one, all you need to do is take a picture of <br> your shopping cart. Voila! The products "move" from your <br> physical cart to your virtual cart, and once you approve <br> your list, paying is as easy as pressing a button. </p>
+            
+            <div class="fadein-1 slide-1">
+                <div id="circle"></div>
+                <img class="del4" src="shop-4.png" width="500" height="auto">
+                <img class="del3" src="shop-3.png" width="450" height="auto">
+                <img class="del2" src="shop-2.png" width="450" height="auto">
+                <img class="del1" src="shop-1.png" width="500" height="auto">
+                    <div>
+                      <span id="dot1" class="dot"></span>
+                      <span id="dot2" class="dot"></span>
+                      <span id="dot3" class="dot"></span>
+                      <span id="dot4" class="dot"></span>
+                      <span id="dot5" class="dot"></span>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="sec2">
+            <h1 id="baghead"> <br> <br> <br> Photo checkout brings the <br> experience of browsing in a <br> 3D space to wherever you are </h1>
+            <p id="roony"> With the ability to pull up a product page with just <br> your camera, photographic checkout redefines the space <br> around you, and the way you view shopping itself. <br> Restocking on items can be as simple as taking a picture <br> in your fridge, and new finds can present themselves <br> virtually anywhere. </p>
+            <div class="fadein-2 slide-2">
+                <img class="del4" src="house-3.png" width="500" height="auto">
+                <img class="del3" src="house-2.png" width="500" height="auto">
+                <img class="del1" src="house-1.png" width="500" height="auto">
+                <img id="mango" class="del1" src="emptymango.png" width="500" height="auto">
+                    <div>
+                      <span id="d0t1" class="dot"></span>
+                      <span id="d0t2" class="dot"></span>
+                      <span id="d0t3" class="dot"></span>
+                      <span id="d0t4" class="dot"></span>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="final">
+            <h1 id="moony"> Computervision and <br> invisible barcoding will <br> make photographic checkout possible </h1>
+            <p> By training a software program to recognize the shapes, colors, logos, and unique packaging of different items sold through Walmart, products can be recognized even without barcodes. The look of the entire product will help the program determine what it actually is. Just like we, as humans, can look at the thing to the left and decide that it's a snack-size bag of Lays potato chips based on it's packet shape, yellow color, Lay's logo, and size numbers, a computer can also be trained reach the same conclusion. </p>
+            
+            <p> Through traditional barcoding may no longer be necessary, invisible barcoding (invisble to humans, but visible to a camera) will be important to use, providing a rather easier method of identifying a product than training a program. When made invisible to humans, the barcodes don't have to be confined to a corner of the product. Instead, the barcode is sread overtop of all the package's surfaces, making it possible to pick up the barcode no matter what angle the product is in. </p>
+            
+            <p> Likely, both computervision and invisible barcoding will work in conjunction to support photographic checkout; invisible barcoding allowing cameras to quickly identify packaged products, and computervision allowing cameras to indentify products without as much packaging, like food, toys, and more.
+            </p>
+            
+            <p> restatement of benefirts, exciting future </p>
+        </div>
+    
+    </div>
+
+
+</body>
+
+<script>
+    // Create the observer
+    const observer = new IntersectionObserver(entries => {
+      // We will fill in the callback later...
+    });
+
+    // Tell the observer which elements to track
+    observer.observe(document.querySelector('.square'));
+</script>
+
+</html>
