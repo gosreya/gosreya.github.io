@@ -42,6 +42,7 @@
         right: 0;
         bottom: 0;
     }
+    
 
     .parallax__layer--base {
         -webkit-transform: translateZ(0) scale(1);
@@ -77,6 +78,8 @@
       -webkit-transform: translateZ(-2px) scale(1.4);
       transform: translateZ(-2px) scale(1.4);
     }
+    
+    
 
    /* centre the content in the parallax layers */
   .title {
@@ -93,10 +96,10 @@
         position:absolute;
         -webkit-animation-name: fade-1;
         -webkit-animation-iteration-count: infinite;
-        -webkit-animation-duration: 28s;
+        -webkit-animation-duration: 24s;
         animation-name: fade-1;
         animation-iteration-count: infinite;
-        animation-duration: 28s;
+        animation-duration: 24s;
     }
     @-webkit-keyframes fade-1 {
         0% {opacity: 1;}
@@ -115,23 +118,23 @@
         -webkit-animation-delay: -0s;
     }
     .del2 {
-        -webkit-animation-delay: -21s;
+        -webkit-animation-delay: -18s;
     }
     .del3 {
-        -webkit-animation-delay: -14s;
+        -webkit-animation-delay: -12s;
     }
     .del4 {
-        -webkit-animation-delay: -7s;
+        -webkit-animation-delay: -6s;
     }
     
     .fadein-2 img {
         position:absolute;
         -webkit-animation-name: fade-2;
         -webkit-animation-iteration-count: infinite;
-        -webkit-animation-duration: 21s;
+        -webkit-animation-duration: 18s;
         animation-name: fade-2;
         animation-iteration-count: infinite;
-        animation-duration: 21s;
+        animation-duration: 18s;
     }
     @-webkit-keyframes fade-2 {
          0% {opacity: 1;}
@@ -225,7 +228,65 @@
         color: #0f6479;
         white-space: nowrap;
         font-size: 4vh;
-        padding-left: 100px;
+        padding-left: 60px;
+        padding-top: 380px;
+    }
+    
+    #goony {
+        position: absolute;
+        color: #f98a8a;
+        padding-left: 60px;
+        padding-top: 520px;
+    }
+    
+    #toony {
+        position: absolute;
+        padding-top: 560px;
+        padding-left: 60px;
+        font-size: 2.7vh;
+        line-height: 25px;
+    }
+    
+    #zoony {
+        position: absolute;
+        color: #f98a8a;
+        padding-left: 980px;
+        padding-top: 350px;
+    }
+    
+    #boony {
+        position: absolute;
+        padding-top: 395px;
+        padding-left: 980px;
+        
+        font-size: 2.7vh;
+        line-height: 25px;
+        
+    }
+    
+    #noony {
+        position: absolute;
+        color: #f98a8a;
+        padding-left: 980px;
+        padding-top: 650px;
+    }
+    
+    #foony {
+        position: absolute;
+        padding-top: 690px;
+        padding-left: 980px;
+        
+        font-size: 2.7vh;
+        line-height: 25px;
+    }
+    
+    #foony-1 {
+        position: absolute;
+        padding-top: 890px;
+        padding-left: 1120px;
+        
+        font-size: 2.7vh;
+        line-height: 25px;
     }
     
     /* padding */
@@ -238,11 +299,10 @@
     }
     #sec2 {
         padding-top: 500px;
-        padding-bottom: 800px;
+        padding-bottom: 600px;
     }
     #final {
-        padding-top: 200px;
-        padding-bottom: 700px;
+        padding-top: 0px;
     }
     
     
@@ -282,6 +342,7 @@
         tranform: translateY(1800px) translateX(500px) rotate(0deg) scale(40%);
     }
     
+    
     /* spicy slideshow animation */
     
     /* two dots */
@@ -295,6 +356,7 @@
           display: inline-block;
           transition: background-color 0.6s ease;
         }
+    
     
         #dot1 {
             opacity: 0.4;
@@ -319,12 +381,8 @@
         #dot5 {
             opacity: 1;
             
-            -webkit-animation-name: fly;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-duration: 28s;
-            animation-name: fly;
-            animation-iteration-count: infinite;
-            animation-duration: 28s;
+            -webkit-animation: fly infinite 24s;
+            animation: fly infinite 24s;
         }
     
         @-webkit-keyframes fly {
@@ -349,8 +407,10 @@
             97% {transform: translateY(485px) translateX(250px)}
             100% {transform: translateY(485px) translateX(190px)}
         }
+        
     
     /* three dots */
+    
     #d0t1 {
         opacity: 0.4;
         -webkit-transform: transform: translateY(515px) translateX(220px);
@@ -371,10 +431,10 @@
         
         -webkit-animation-name: fly1;
         -webkit-animation-iteration-count: infinite;
-        -webkit-animation-duration: 21s;
+        -webkit-animation-duration: 18s;
         animation-name: fly1;
         animation-iteration-count: infinite;
-        animation-duration: 21s;
+        animation-duration: 18s;
     }
 
     @-webkit-keyframes fly1 {
@@ -411,12 +471,8 @@
           border-radius: 50%;
           opacity: 0.5;
           
-          -webkit-animation-name: float-1;
-          -webkit-animation-iteration-count: infinite;
-          -webkit-animation-duration: 28s;
-          animation-name: float-1;
-          animation-iteration-count: infinite;
-          animation-duration: 28s;
+          -webkit-animation: float-1 infinite 24s;
+          animation: float-1 infinite 24s;
         }
         @-webkit-keyframes float-1 {
             0% { transform: translateY(0px) translateX(-70px)}
@@ -447,10 +503,10 @@
           
           -webkit-animation-name: missing;
           -webkit-animation-iteration-count: infinite;
-          -webkit-animation-duration: 21s;
+          -webkit-animation-duration: 18s;
           animation-name: missing;
           animation-iteration-count: infinite;
-          animation-duration: 21s;
+          animation-duration: 18s;
         }
         @-webkit-keyframes missing {
             0% {opacity: 0%}
@@ -485,11 +541,53 @@
             100% {opacity: 0%}
         }
     
+    .casing {
+        perspective: 800px;
+        
+    }
+    .klingo {
+        -webkit-transform: translateY(-235px) translateX(270px) rotateY(10deg) rotateX(3deg) scale(50%);
+        transform: translateY(-235px) translateX(270px) rotateY(10deg) rotateX(3deg) scale(50%);
+        position: absolute;
+    }
+    #depth1 {
+        -webkit-transform: translateY(-238px) translateX(263px) rotateY(10deg) rotateX(3deg) scale(50%);
+        transform: translateY(-238px) translateX(263px) rotateY(10deg) rotateX(3deg) scale(50%);
+        position: absolute;
+    }
+    #depth2 {
+        -webkit-transform: translateY(-238px) translateX(260px) rotateY(10deg) rotateX(3deg) scale(50%);
+        transform: translateY(-238px) translateX(260px) rotateY(10deg) rotateX(3deg) scale(50%);
+        position: absolute;
+    }
     
+    #try-self {
+        -webkit-transform: translateY(-100px) translateX(90px) scale(11%);
+        transform: translateY(-100px) translateX(90px) scale(11%);
+        position: absolute;
+    }
+    
+    #noodle {
+        -webkit-transform: translateY(-125px) translateX(60px) scale(32%);
+        transform: translateY(-125px) translateX(60px) scale(32%);
+        position: absolute;
+    }
+    
+    #bottomMat {
+        -webkit-transform: translateY(800px) translateX(340px);
+        transform: translateY(800px) translateX(340px);
+        height: 300px;
+        width: 750px;
+        background-color: #2b8695;
+        border-radius: 50%;
+        position: absolute;
+    }
 
 </style>
 
 <body>
+    
+    
     
     <div class="parallax">
         
@@ -563,15 +661,101 @@
         </div>
         
         <div id="final">
-            <h1 id="moony"> Computervision and <br> invisible barcoding will <br> make photographic checkout possible </h1>
-            <p> By training a software program to recognize the shapes, colors, logos, and unique packaging of different items sold through Walmart, products can be recognized even without barcodes. The look of the entire product will help the program determine what it actually is. Just like we, as humans, can look at the thing to the left and decide that it's a snack-size bag of Lays potato chips based on it's packet shape, yellow color, Lay's logo, and size numbers, a computer can also be trained reach the same conclusion. </p>
+            <h1 id="moony"> Computervision and <br> invisible barcoding will make <br> photographic checkout possible </h1>
+            <h3 id="goony"> Computervision </h3>
+            <div id="toony">
+                <p> By training a software program to recognize the <br> shapes, colors, logos, and unique packaging of items <br> sold through Walmart, products can be <br> recognized even without barcodes. </p>
+                
+                <p> <br> Just like we, as humans, can look at <br> the product to the left and decide <br> that it's a chicken flavored <br> Maruchuan noodle cup based on it's <br> yellow, white, and red, the picture <br> of noodle soup, Maruchan's logo, <br> and the text and numbers, a <br> computer can also be trained <br> to think the same way. </p>
+            </div>
             
-            <p> Through traditional barcoding may no longer be necessary, invisible barcoding (invisble to humans, but visible to a camera) will be important to use, providing a rather easier method of identifying a product than training a program. When made invisible to humans, the barcodes don't have to be confined to a corner of the product. Instead, the barcode is sread overtop of all the package's surfaces, making it possible to pick up the barcode no matter what angle the product is in. </p>
+            <h3 id="noony"> A Beautiful Friendship </h3>
+                
+            <p id="foony"> Likely, both computervision and invisible barcoding will be used to support <br> photo checkout: invisible barcoding <br> used especially for identifying packaged products, and computervision allowing <br> &nbsp&nbsp&nbsp&nbsp cameras to identify products without as <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp much packaging like food, toys, <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp and more. Both together make </p>
             
-            <p> Likely, both computervision and invisible barcoding will work in conjunction to support photographic checkout; invisible barcoding allowing cameras to quickly identify packaged products, and computervision allowing cameras to indentify products without as much packaging, like food, toys, and more.
-            </p>
+            <p id="foony-1"> photographic checkout a powerful tool for the near <br> future. </p>
             
-            <p> restatement of benefirts, exciting future </p>
+            <h3 id="zoony"> Invisible Barcoding </h3>
+
+            
+            <p id="boony"> Rather than traditional barcoding, <br>
+            invisible barcoding (<a href="https://www.digimarc.com/about/news-events/digimarc-technology-in-the-news/2015/08/19/walmart-lets-the-barcode-disappear">invisible to humans, <br> but visible to a camera</a>) will be important <br> for photo checkout. When made invisible <br> to humans, barcodes can spread over <br> all the package's surfaces (on top of <br> human-visible information), making it <br> possible to pick up the barcode no matter <br> what angle the product is in. </p>
+            
+            <div id="bottomMat"></div>
+
+            
+            <div class="casing">
+                
+                <img id="noodle" src="noodle.png">
+                    
+                <img id="depth2" src="thruphone.png" alt="phone">
+                    
+                <img id="depth1" src="thruphone.png" alt="phone">
+                    
+                <img id="try-self" src="try-self.png">
+                    
+               
+                    <!-- Image Map Generated by http://www.image-map.net/ -->
+                
+                <div id="la">
+                    <img class="klingo" src="la.png" usemap="#image-map6">
+
+                    <map name="image-map6">
+                        <area target="_blank" title="walmart" href="https://www.walmart.com/" coords="336,589,42" shape="circle">
+                        <area target="" alt="return to cart" title="return to cart" href="#" coords="338,1270,342,1248,357,1234,380,1227,673,1229,694,1238,704,1257,704,1281,686,1305,648,1309,375,1309,346,1295" shape="poly" onclick="screenToggle(9)">
+                    </map>
+                </div>
+                
+                <div id="so">
+                    <img class="klingo" src="so.png" usemap="#image-map5">
+
+                    <map name="image-map5">
+                        <area title="search" target="_blank" href="https://www.walmart.com/search/?query=" coords="601,592,38" shape="circle">
+                        <area title="walmart" target="_blank" href="https://www.walmart.com/" coords="335,591,43" shape="circle">
+                        <area title="checkout" href="#" coords="327,1287,329,1271,339,1257,359,1245,382,1244,682,1244,699,1250,711,1261,720,1277,723,1295,717,1308,706,1323,689,1333,362,1333,342,1324,329,1308" shape="poly" onclick="screenToggle(8)">
+                    </map>
+                </div>
+                
+                <div id="fa">
+                    <img class="klingo" src="fa.png" usemap="#image-map4">
+
+                    <map name="image-map4">
+                        <area title="add to cart" href="#" coords="353,1315,360,1294,378,1278,398,1275,446,1275,648,1274,678,1291,686,1316,678,1342,653,1358,386,1359,360,1343" shape="poly" onclick="screenToggle(7)">
+                        <area target="" title="return" href="#" coords="701,592,40" shape="circle" onclick="screenToggle(10)">
+                    </map>
+                </div>
+                
+                <div id="mi">
+                    <img class="klingo" src="mi.png" usemap="#image-map3">
+
+                    <map name="image-map3">
+                        <area title="add to cart" href="#" coords="438,612,442,589,458,577,477,573,694,573,714,580,725,595,727,620,718,638,700,649,658,651,470,651,445,637,442,626" shape="poly" onclick="screenToggle(3)">
+                        <area title="more info" href="#" coords="466,792,475,749,487,738,633,738,665,735,686,741,691,762,691,777,683,791,647,794" shape="poly" onclick="screenToggle(4)">
+                        <area title="retake" href="#" coords="478,1290,482,1266,504,1247,554,1245,606,1245,658,1245,700,1247,721,1260,730,1289,715,1321,677,1333,516,1332,492,1322,481,1306" shape="poly" onclick="screenToggle(5)">
+                        <area title="return" href="#" coords="380,1288,62" shape="circle" onclick="screenToggle(6)">
+                    </map>
+                </div>
+                    
+                <div id="ray">
+                    <img class="klingo" src="ray.png" usemap="#image-map2">
+
+                    <map name="image-map2">
+                        <area title="photo button" href="#" coords="524,1308,50" shape="circle" onclick="screenToggle(2)">
+                    </map>
+                </div>
+                
+                <div id="doe">
+                    <img class="klingo" src="do.png" usemap="#image-map1">
+
+                    <map name="image-map1">
+                        <area title="" href="#" coords="608,921,65" shape="circle" onclick="screenToggle(1)">
+                        <area title="search" target="_blank" href="https://www.walmart.com/search/?query=" coords="429,924,61" shape="circle">
+                        <area title="walmart" target="_blank" href="https://www.walmart.com/" coords="336,591,43" shape="circle">
+                    </map>
+                </div>
+                
+            </div>
+            
         </div>
     
     </div>
@@ -580,13 +764,76 @@
 </body>
 
 <script>
-    // Create the observer
-    const observer = new IntersectionObserver(entries => {
-      // We will fill in the callback later...
-    });
+    function screenToggle(n) {
+      var doe = document.getElementById("doe");
+      var ray = document.getElementById("ray");
+      var mi = document.getElementById("mi");
+      var fa = document.getElementById("fa");
+      var so = document.getElementById("so");
+      var la = document.getElementById("la");
+      
+      if (n === 1) {
+        doe.style.display = "none";
+        mi.style.display = "none";
+        fa.style.display = "none";
+        so.style.display = "none";
+        la.style.display = "none";
+        
+        ray.style.display = "block";
+      } else if (n === 2) {
+          ray.style.display = "none";
+          mi.style.display = "block";
+      } else if (n === 3) {
+          mi.style.display = "none";
+          so.style.display = "block";
+      } else if (n === 4) {
+          mi.style.display = "none";
+          fa.style.display = "block";
+      } else if (n === 5) {
+          mi.style.display = "none";
+          ray.style.display = "block";
+      } else if (n === 6) {
+          mi.style.display = "none";
+          doe.style.display = "block";
+      } else if (n === 7) {
+          fa.style.display = "none";
+          so.style.display = "block";
+      } else if (n === 8) {
+          so.style.display = "none";
+          la.style.display = "block";
+      } else if (n === 9) {
+          la.style.display = "none";
+          doe.style.display = "block";
+      } else if (n === 10) {
+          so.style.display = "none";
+          mi.style.display = "block";
+      }
+    }
+    
+    /* slideshow animation starting */
+    
+    /* slideshow1 = document.getElementByClassName("fadein-1 img");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    /* window.onscroll = function() {scrollFunction()};
 
-    // Tell the observer which elements to track
-    observer.observe(document.querySelector('.square'));
+    function scrollFunction() {
+      if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+          slideshow1.style.animationPlayState = "paused";
+      } else {
+          slideshow1.style.animationPlayState = "active";
+      }
+    } */
+    
+    /* window.addEventListener('scroll', function() {
+        let value = window.scrollY;
+        if (value > 0) {
+            slideshow1.style.animationPlayState = paused;
+        } else {
+            slideshow1.style.animationPlayState = active;
+        }
+    } */
+                            
 </script>
 
 </html>
