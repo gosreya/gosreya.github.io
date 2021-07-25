@@ -918,7 +918,11 @@
     }
     
     #noodle {
-        -webkit-transform: translateY(-125px) translateX(60px) scale(32%);
+        padding-left: 0vw;
+        padding-top: 32vh;
+        -webkit-transform: scale(32%);
+        /*
+        -webkit-transform: translateY(-125px) translateX(60px) scale(32%); */
         -ms-transform: translateY(-125px) translateX(60px) scale(32%);
         -moz-transform: translateY(-125px) translateX(60px) scale(32%);
         -o-transform: translateY(-125px) translateX(60px) scale(32%);
@@ -926,12 +930,14 @@
         position: absolute;
     }
     
-    #bottomMat {
-        -webkit-transform: translateY(800px) translateX(340px);
-        -ms-transform: translateY(800px) translateX(340px);
+    #mat {
+
+        -webkit-transform: translateY(123vh) translateX(22vw);
+        /* -ms-transform: translateY(800px) translateX(340px);
         -moz-transform: translateY(800px) translateX(340px);
         -o-transform: translateY(800px) translateX(340px);
-        transform: translateY(800px) translateX(340px);
+        transform: translateY(800px) translateX(340px); */
+        
         height: 300px;
         width: 750px;
         background-color: #2b8695;
@@ -1038,11 +1044,11 @@
             
             <p id="bartext"> Rather than traditional barcoding, <br>
             invisible barcoding (<a href="https://www.digimarc.com/about/news-events/digimarc-technology-in-the-news/2015/08/19/walmart-lets-the-barcode-disappear">invisible to humans, <br> but visible to a camera</a>) will be important <br> for photo checkout. When made invisible <br> to humans, barcodes can spread over <br> all the package's surfaces (on top of <br> human-visible information), making it <br> possible to pick up the barcode no matter <br> what angle the product is in. </p>
-            
-            <div id="bottomMat"></div>
 
             
             <div class="casing">
+                
+                <div id="mat"></div>
                 
                 <img id="noodle" src="noodle.png">
                     
