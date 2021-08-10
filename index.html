@@ -1,293 +1,711 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>Sreya Gogineni Homepage</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
     
 <style>
-body,h1,h2{font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-p {line-height: 2}
-    /* image rounding */
     
-    img {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        border: 5px solid #616161;
-        float: left;
-        shape-outside: circle();
-        margin-right: 45px;
-    }
-    
-    /* left*/
-    
-    left {
-         text-align: left;
-
-    }
-
-    /* navigation menu */
-    
-        .sidenav {
-          height: 100%;
-          width: 0;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background-color: #111;
-          overflow-x: hidden;
-          transition: 0.5s;
-          padding-top: 60px;
-        }
-
-        .sidenav a {
-          padding: 8px 8px 8px 32px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-        }
-
-        .sidenav a:hover {
-          color: #f1f1f1;
-        }
-
-        .sidenav .closebtn {
-          position: absolute;
-          top: 0;
-          right: 25px;
-          font-size: 36px;
-          margin-left: 50px;
-        }
-    
-        @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 18px;}
-        }
-
-    /* Create four unequal columns that floats next to each other */
-    * {
+    *{
       box-sizing: border-box;
-    }
-
-    .column {
-      float: left;
-      padding: 16px;
-      height:
-    }
-
-    .first-fourth {
-      width: 20%;
-    }
-
-    .second-fourth {
-      width: 40%;
-    }
-
-    .third-fourth {
-      width: 30%;
-    }
-
-    .fourth-fourth {
-      width: 10%;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+      padding: 0;
+      margin: 0;
     }
     
-    /* Another table */
-        
-      .col {
+    body {
+        background-color: #2a2a2a;
+        font-family: 'Raleway', sans-serif;
+        transition: background-color 0.7s;
+    }
+    
+    body.green {
+        background-color: #85ccc9;
+    }
+    
+    section {
+        min-height:100vh;
+    }
+
+    .grid-container1 {
+      display: grid;
+      grid-template-areas:
+        'header'
+        'about'
+        'favicon'
+        'scroll';
+      grid-row-gap: 10%;
+      grid-column-gap: 7%;
+      padding-left: 12%;
+      padding-right: 26%;
+      padding-top: 20%;
+    }
+            .title {
+                grid-area: header;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 9.1vh;
+                font-weight: 700;
+                color: white;
+            }
+            .aboutme {
+                font-family: 'Raleway', sans-serif;
+                font-size: 2.1vh;
+                font-weight: 300;
+                grid-area: about;
+                color: white;
+            }
+            .favicon {
+                grid-area: favicon;
+                color: white;
+            }
+    
+    .grid-container2 {
+      display: grid;
+      grid-template-areas:
+        'title2'
+        'cards';
+      grid-row-gap: 5%;
+      padding-top: 12%;
+    }
+            .title2 {
+                grid-area: title2;
+                font-family: 'Josefin Sans', sans-serif;
+                color: #fbc2c1;
+            }
+                title2 {
+                    padding-bottom: 3%;
+                    font-size: 5vh;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            .cards {
+                grid-area: cards;
+                background: #404040;
+                width: 43vw;
+                /* height: 18vw; */
+                padding: 2%;
+                color: ghostwhite;
+                opacity: 0.97;
+            }
+                cardsleft {
+                    padding-left: 15%;
+                }
+                cardsright {
+                    padding-left: 42%;
+                }
+                subhead {
+                    opacity: 0.85;
+                    font-size: 2.5vh;
+                }
+                .subtext {
+                    opacity: 0.6;
+                    font-size: 1.9vh;
+                    line-height: 2.9vh;
+                }
+    
+    #landing {
+        min-height:100vh;
+    }
+    
+    #experiences {
+        background: #2a2a2a;
+        min-height:170vh;
+    }
+    #projects {
+        background: #7fc6b6;
+        min-height:100vh;
+    }
+    #skills {
+        min-height:88vh;
+        background: #85ccc9;
+    }
+    #footer {
+        background: #2a2a2a;
+        min-height:12vh;
+        color: #6f6f6f;
+        font-size: 2vh;
+        text-align: center;
+        padding: 3%;
+    }
+    
+    .vl {
+      border-left: 2px solid #fbc2c1;
+      height: 120vh;
+      position: absolute;
+      left: 50%;
+      top: 130%;
+    }
+    
+    .grid-container3 {
+      display: grid;
+      grid-template-areas:
+        'title3'
+        'projects';
+      grid-row-gap: 20%;
+      padding-top: 11%;
+      padding-left: 12%;
+      padding-right: 12%;
+    }
+        .title3 {
+            grid-area: title3;
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            font-size: 5.5vh;
+            font-weight: 700;
+            color: #029e9f;
+        }
+    
+
+        .flex-container {
+          background: #e7f3f0;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+        }
+            .projects {
+                grid-area: projects;
+            }
+    
+        .GraveCat {
+            background-image: url("square-gravecat.png");
+        }
+            .GraveCat:hover .merp {
+                filter:brightness(85%);
+                visibility: visible;
+                backdrop-filter: brightness(50%);
+                transition-duration: 0.4s;
+            }
+    
+            .merp {
+                filter:brightness(100%);
+                color: rgb(255, 255, 255, 1);
+                visibility: hidden;
+                padding: 1vw 1vw;
+                min-width: 16vw;
+                min-height: 16vw;
+                font-size: 2.2vh;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+            }
+    
+        .Covid {
+            background-image: url("square-covid.png");
+        }
+            .Covid:hover .merp {
+                filter:brightness(85%);
+                visibility: visible;
+                backdrop-filter: brightness(50%);
+                transition-duration: 0.4s;
+            }
+    
+        .Walmart {
+            background-image: url("square-walmart.png");
+        }
+            .Walmart:hover .merp {
+                filter:brightness(92%);
+                visibility: visible;
+                backdrop-filter: brightness(50%);
+                transition-duration: 0.4s;
+            }
+    
+        .flex-container > .proj {
+          width: 16vw;
+          height: 16vw;
+          margin: 1%;
+          object-fit: contain;
+          background-size: 16vw 16vw;
+          
+          font-size: 3vh;
+        }
+
+    
+        .fa {
+            text-decoration: none;
+            color: white;
+            margin: 0.5vw;
+            font-size: 4.3vh;
+        }
+            .fa:hover {
+                text-shadow: 0px 0px 5px white;
+            }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 25vh; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #2a2a2a;
+      margin: auto;
+      padding: 3vh 3vw;
+      width: 55%;
+      height: 60%;
+      color: white;
+    }
+    
+    .modal-content img {
         float: left;
-      }
+        margin-right: 1vw;
+        width: 22vw;
+        height: 22vw;
+    }
+    
+    .modal-content heady {
+        font-size: 2.5vh;
+    }
+    
+    .modal-content tiny {
+        
+    }
 
-      .left {
-        width: 20%;
-      }
-      
-      .right {
-        width: 28%;
-      }
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 4vh;
+      font-weight: bold;
+    }
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+    
+    .grid-container4 {
+      display: grid;
+      grid-template-areas:
+        'title4 title4'
+        'cw skillz';
+      grid-row-gap: 40%;
+      padding-top: 9%;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+        .title4 {
+            grid-area: title4;
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            font-size: 5.5vh;
+            font-weight: 700;
+            color: #155e7a;
+        }
+        .cw {
+            grid-area: cw;
+            color: #404040;
+            line-height: 4vh;
+            font-size: 2.2vh;
+        }
+        .skillz {
+            grid-area: skillz;
+            line-height: 6vh;
+        }
+            skill {
+                background: #d8e0bb;
+                border-radius: 6px;
+                height: 3vh;
+                padding: 2%;
+                color: #155e7a;
+            }
+            .mas {
+                padding: 1%;
+                color: #155e7a;
+                background: #c1eceb;
+                background: #d8e0bb;
+                border-radius: 6px;
+                width: 90%;
+                font-weight: 400;
+            }
+    
+    ul {
+        list-style-type: none; /* Remove bullets */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margins */
+    }
+    
+    a {
+        text-decoration: none;
+        color: #888888;
+    }
+    a:hover {
+        font-weight: 600;
+    }
+    
+    #scrollDownBtn {
+      width: 1.7vw;
+      height: 1.7vw;
+      margin-left: -12px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      box-sizing: border-box;
+      animation-name: tempt;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+    }
+    
+    #scrollDownCircle {
+        position: absolute;
+        left: 78.3;
+        background-color:white;
+        opacity: 0.2;
+        border-radius: 50%;
+        width: 2vw;
+        height: 2vw;
+    }
+    
+    #scrollDownContainer {
+        top: 87%;
+        left: 50%;
+        position: absolute;
+        cursor: pointer;
+    }
+    
+    #scrollDownContainer:hover #scrollDownCircle {
+        opacity: 0.2;
+        width: 4vw;
+        height: 4vw;
+        transition: 0.3s;
+    }
+    
+    /* @keyframes tempt {
+        0% {top: 90%;}
+        70% {top: 90%;}
+        76% {top: 88%;}
+        80% {top: 90%;}
+        86% {top: 88%;}
+        90% {top: 90%;}
+    } */
+    
+    #scrollToTopCircle {
+        position: absolute;
+        background-color:white;
+        border-radius: 50%;
+        width: 5.5vw;
+        height: 5.5vw;
+        top: 451%;
+        left: 48%;
+    }
+    
+    #scrollToTopBtn {
+        position: absolute;
+        width: 1.7vw;
+        height: 1.7vw;
+        margin-left: -12px;
+        border-left: 5px solid #155e7a;
+        border-bottom: 5px solid #155e7a;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+        box-sizing: border-box;
+        top: 455%;
+        left: 50.65%;
+    }
+    
+    #scrollToTopContainer {
+        cursor: pointer;
+    }
+    
+    #scrollToTopContainer:hover #scrollToTopCircle{
+        width: 6vw;
+        height: 6vw;
+        left: 47.8%;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    #scrollToTopContainer:hover #scrollToTopBtn{
+        width: 2vw;
+        height: 2vw;
+        top: 455.3%;
+        transition: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    
 
-      .middle {
-        width: 52%;
-      }
-      
-      /* Clear floats after the columns */
-      .ro:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-    /* Hover links */
-    z:hover {
-      color: Salmon;
-      font-weight: 900;
-      transition-duration: 0.4s;
-    }
-    
-    r:hover {
-      color: Gold;
-      font-weight: 900;
-      transition-duration: 0.4s;
-    }
-    
-    c:hover {
-      color: MediumSpringGreen;
-      font-weight: 900;
-      transition-duration: 0.4s;
-    }
-    
-    d:hover {
-      color: DarkTurquoise;
-      font-weight: 900;
-      transition-duration: 0.4s;
-    }
-    
-    /* back darkest peru */
-    po {background-color: #2c2c2c}
-    
-    /* turqoise */
-    e {color: PaleTurquoise }
-    
-    /* hwhite */
-    
-    w {color: white }
-    
-    /* gosreya */
-    
-    v {color: MediumTurquoise}
-    
-    /* underline */
-    f:hover {text-decoration: underline;}
-    
-    /* bold */
-    m {font-weight: 1000;}
-    
-    /* background */
-    body { background-color: #616161; }
-   
     
 </style>
 
 <body>
+    
+    <section id="landing">
+        <div class="grid-container1">
+            <div class="title">
+                 SREYA GOGINENI
+                </div>
+            <div class="aboutme">
+                Hi, thanks for visiting! I'm Sreya and I'm a second year undergraduate student attending
+                the University of Michigan, studying computer science and chemistry. I'm
+                a research assistant at the Biteen Lab at U-M where I contribute
+                to programmatic bioimaging analysis as well as an intern in the alliance management
+                branch of the Multiple Myeloma Research Foundation. I'm interested in intersecting
+                chemistry with computer science as well as, broadly, biotech, web development,
+                the tech industry, and healthcare, among other things.
+                </div>
+            <div class="favicon">
+                <a href="#" title="resume" target="_blank" class="fa fa-file"></a>
+                <a href="https://www.linkedin.com/in/sreya-gogineni-09b6961b0/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="#" target="_blank" class="fa fa-github"></a>
+                <a href="gosreya@umich.edu" title="e-mail" target="_blank" class="fa fa-envelope"></a>
+                </div>
 
-        <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="https://gosreya.github.io/">Home</a>
-          <a href="https://gosreya.github.io/experiences">Experiences</a>
-          <a href="https://gosreya.github.io/code">Code</a>
-          <a href="https://gosreya.github.io/research">Research</a>
-          <a href="https://gosreya.github.io/coursework">Coursework</a>
-          <a href="https://gosreya.github.io/smorgasbord">Smorgasbord</a>
+            <div id="scrollDownContainer">
+                <div id="scrollDownCircle"></div>
+                <div id="scrollDownBtn"></div>
+            </div>
+            
         </div>
-        <br> <w>
-         &nbsp &nbsp &nbsp &nbsp
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; open</span> </w>
+    </section>
+    
+    <section id="experiences">
 
-        <script>
+        <div class="grid-container2">
             
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-            
-        </script>
-        
-    
-<div class="w3-container w3-padding-30 w3-dark-gray w3-grayscale-min" id="us">
-  <!--div class="w3-content"-->
-    <!-- <h1 class="w3-center w3-text-grey"><b>Jane & John</b></h1> -->
-    
-    <body>
-    
-
-    
-    <div class="row">
-        <div class="column first-fourth" >
-
-
-      </div>
-        <div class="column second-fourth" >
-                <br>
-                <br>
-                   <h1> <m> Hi! I'm Sreya Gogineni! </m> </h1>
-                <br>
-            <div>
-            <p>I'm a second year undergrad student at the University of Michigan majoring in chemistry and computer science. </p>
-            <p>I'm a research assistant at the Biteen Lab, where my work focuses on bioimaging. I'm also currently an intern in the alliance management branch of the Multiple Myeloma Research Foundation. Finally, I seriously hope this paragraph will be longer soon.</p>
+            <div class="vl">
             </div>
-            <!-- resume shit and else -->
-                 <p> <e>
-                    <br>
-                    <f> <a href="" style="text-decoration: none"> resume </a> </f> &nbsp &nbsp <f> <a href="https://www.linkedin.com/in/sreya-gogineni-09b6961b0/" style="text-decoration: none"> linkedin </a> </f> &nbsp &nbsp <f> <a href="https://github.com/gosreya" style="text-decoration: none"> github </a> </f> &nbsp &nbsp <v> gosreya@umich.edu </v>
-                 </e> </p>
-      </div>
-      <div class="column third-fourth" >
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-           <e>
-               <h2> &nbsp &nbsp <z> <a href="https://gosreya.github.io/experiences" style="text-decoration: none"> Experiences </a> </z> </h2>
-               <h2> &nbsp &nbsp <r> <a href="https://gosreya.github.io/code" style="text-decoration: none"> Code </a> </r> </h2>
-               <h2> &nbsp &nbsp <c>  <a href="https://gosreya.github.io/research" style="text-decoration: none"> Research </a> </c> </h2>
-               <h2> &nbsp &nbsp <d> <a href="https://gosreya.github.io/coursework" style="text-decoration: none"> Coursework </a> </d> </h2>
-           </e>
-      </div>
-
-      <div class="column fourth-fourth" > </div>
-  
-    </div>
-    
-  </div>
-</div>
-
-
-
-<!-- Wedding information -->
-<div class="w3-container w3-padding-24 w3-pale-blue w3-grayscale-min w3-center" id="wedding">
- 
-    
-        <!-- table tennis -->
-        
-          <div class="row">
-            <div class="column left"> </div>
-            <div class="column middle">
             
-                
-                <img src="Picture_of_Me.png" alt="Sreya Gogineni" style="object-fit: cover; object-position: 100% 0;">
-                
-                        <left> <p> <br> My hometown is Troy, Michigan. I like pencil drawing and making graphic art and sometimes writing comics. I also love trivia and doing deep Wikipedia dives. My favorite weather is light rain and my favorite food is soup, though both are old foes to glasses-wearers like myself. <br> <br> </p> </left>
+            <title2><div class="title2">
+                My experiences
+                </div></title2>
             
+            
+            <cardsleft> <div class="cards">
+                <subhead> Intern - Multiple Myeloma Research Foundation </subhead>
+                <div class="subtext"> <br> Created slidedecks presented to pharmaceutical partners
+                aimed to secure continuing sponsorship. Assembled two virtual patient education fairs by organizing booths presenting healthcare media for 15 pharmaceutical companies and the MMRF, still remaining on the MMRF website. Presented to the alliance management branch analysis of promising emerging myeloma treatments, researched by scouring news and drug discovery databases, aiming to inform partnership and investment opportunities. </div>
+                <!--subtext> <br> <br> Created slidedecks presented to pharmaceutical partners
+                aimed to secure further sponsorship for patient and professional education programs
+                and community events. <br> <br> Assembled two virtual patient education fairs by organizing  booths presenting healthcare media for 15 pharmaceutical companies and the MMRF, still remaining on the MMRF website. <br> <br> Presented to the MMRF alliance management branch analysis of promising emerging myeloma treatments found through research scouring news and drug discovery databases, aiming to inform partnership and investment opportunities. </subtext-->
+                </div> </cardsleft>
+            <cardsright> <div class="cards">
+                <subhead>  Research Assistant - Biteen Lab at U-fM </subhead>
+                <div class="subtext"> <br> Created agar-plate cell counting program by designing thresholding limit-finding algorithm and combining with cell profiler package. Worked on implementing Ripleys functions on single-molecule localization coordinate sets to quantify the level of clustering occuring in reference to P-granule formation in E-coli.
+                </div>
+                </div> </cardsright>
+            <cardsleft> <div class="cards">
+                <subhead> Student - University of Michigan </subhead>
+                <div class="subtext"> <br> Studying computer science and chemistry. Involved in fundraising and program planning at End-the-Cycle, a non-profit aiming to reduce educational barriers for homeless youth in the Ann Arbor area.
+                </div>
+                </div> </cardsleft>
+            <cardsright> <div class="cards">
+                <subhead> Student - International Academy East </subhead>
+                <div class="subtext"> <br> Valedictorian. Founded and co-led the Quiz Bowl Club and UNICEF Club. Participated in Science Olympiad, HOSA, Eurochallenge 2018, and the National Economics Challenge.
+                </div>
+                </div> </cardsright>
+            
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="grid-container3">
+            <div class="title3"> Projects </div>
+    
+            <div class="flex-container projects">
+                
+                <div class="proj Covid" id="breakBtn"> <div class="merp">Breakthrough Junior Challenge 2020 </div></div>
+                <div class="proj Walmart" id="walBtn"> <div class="merp">Walmart + Girls Who Code - Code Your Way to Grace Hopper </div></div>
+                <div class="proj GraveCat" id="catBtn"> <div class="merp">Graveyard Cat </div> </div>
+                
+
+                <div id="breakModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close close1"></span>
+                    <img src="square-covid.png">
+                    <heady>Breakthrough Junior Challenge 2020 <br> <br> </heady>
+                    <tiny> My <a target="_blank" href="https://youtu.be/xXanm_DqbKQ">video</a> about the COVID-19 virus cell entry method and immune response was a semifinalist in the science video challenge (top 30 from >5000 submissions). <tiny>
+                  </div>
+                </div>
+                
+                <div id="walModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close close2"></span>
+                    <img src="square-walmart.png">
+                    <heady> Walmart + Girls Who Code - Code Your Way to Grace Hopper <br> <br> </heady>
+                    <tiny> I designed a <a target="_blank" href="gosreya.github.io/photographic-checkout">website</a> describing a new innovation Walmart could implement to improve
+                        the experience of shopping. This was my first foray into web design. <tiny>
+                  </div>
+                </div>
+                
+                <div id="catModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close close3"></span>
+                    <img src="square-gravecat.png">
+                    <heady> Graveyard Cat <br> <br> </heady>
+                    <tiny> A work in progress: an arcade style video game written on Scratch wherein a noble cat braves the night to keep a graveyard's ghosts under control. <tiny>
+                  </div>
+                </div>
+                
+                
             </div>
-            <div class="column right" </div>
-         </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="grid-container4">
+            <div class="title4">
+                Coursework and Skills
+            </div>
+            <div class="cw mas">
+                <ul>
+                    <li> &nbsp <b> EECS 183 </b> | Elementary Programming Concepts </li>
+                    <li> &nbsp <b> EECS 280 </b> | Programming and Intro Data Structures </li>
+                    <li> &nbsp <b> EECS 203 </b> | Discrete Math </li>
+                    <li> &nbsp <b> CHEM 211/212 </b> | Organic Chemistry I + Lab </li>
+                    <li> &nbsp <b> CHEM 215/216 </b> | Organic Chemistry II + Lab  </li>
+                    <li> &nbsp <b> BIO 172 </b> | Introductory Biology - Molecular, Cellular, and Developmental  </li>
+                </ul>
+            </div>
+            <div class="skillz">
+                <b> <ul>
+                    <li> <skill> &nbspC/C++&nbsp </skill> </li>
+                    <li> <skill> &nbspPython&nbsp </skill> </li>
+                    <li> <skill> &nbspHTML/CSS&nbsp </skill> </li>
+                    <li> <skill> &nbspMATLAB&nbsp </skill> </li>
+                    <li> <skill> &nbspBash/Git&nbsp </skill> </li>
+                </ul> </b>
+            </div>
+        </div>
+        
+        <div id="scrollToTopContainer">
+            <div id="scrollToTopCircle"></div>
+            <div id="scrollToTopBtn"></div>
+        </div>
+    </section>
+    
+    
+    <section id="footer">
+        Created by Sreya Gogineni ﹡ 2021 ﹡ gosreya@umich.edu
+    </section>
 
+    
 
-  </div>
-</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
 
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-    © 2021 sreya gogineni
-<div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
 </body>
+
+<script>
+    $(function() {
+      $(window).scroll(function() {
+        if( $(this).scrollTop() > 10) {
+          $('body').addClass('green');
+        }
+        else {
+          $('body').removeClass('green');
+        }
+      })
+    })
+    
+    // Get the modal
+    var modal1 = document.getElementById("breakModal");
+    var modal2 = document.getElementById("walModal");
+    var modal3 = document.getElementById("catModal");
+
+    // Get the button that opens the modal
+    var btn1 = document.getElementById("breakBtn");
+    var btn2 = document.getElementById("walBtn");
+    var btn3 = document.getElementById("catBtn");
+
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("close1")[0];
+    var span2 = document.getElementsByClassName("close2")[0];
+    var span3 = document.getElementsByClassName("close3")[0];
+
+    // When the user clicks the button, open the modal
+    btn1.onclick = function() {
+      modal1.style.display = "block";
+    }
+    btn2.onclick = function() {
+      modal2.style.display = "block";
+    }
+    btn3.onclick = function() {
+      modal3.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span1.onclick = function() {
+      modal1.style.display = "none";
+    }
+    span2.onclick = function() {
+      modal2.style.display = "none";
+    }
+    span3.onclick = function() {
+      modal3.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+      if (event.target == modal3) {
+        modal3.style.display = "none";
+      }
+    }
+    
+    
+    //
+    var scrollToTopBtn = document.getElementById("scrollToTopContainer");
+    var rootElement = document.documentElement;
+    function scrollToTop() {
+      // Scroll to top logic
+      rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+    }
+    
+    scrollToTopBtn.addEventListener("click", scrollToTop);
+    
+    //
+    var scrollDownBtn = document.getElementById("scrollDownContainer");
+    var rootElement = document.documentElement;
+    function scrollDown() {
+      // Scroll to top logic
+      rootElement.scrollTo({
+        top: 900,
+        behavior: "smooth"
+      })
+    }
+    
+    scrollDownBtn.addEventListener("click", scrollDown);
+    
+</script>
+
 </html>
+
+
+<!--
+Frank (Hawkeye)
+Piper (Black Widow)
+Hazel ()
+Jason (Thor)
+Leo (Hulk)
+Annabeth (Cap)
+Percy (Iron Man)
+-->
