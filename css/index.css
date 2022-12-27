@@ -12,6 +12,10 @@ body {
         background-color: #85ccc9;
     }
 
+#landing-container {
+    min-height:100vh;
+}
+
 @media screen and (min-width: 1200px) {
     #title {
         padding-top: 38vh;
@@ -121,6 +125,13 @@ body {
         opacity: 0.8;
     }
 
+.scrollbar {
+    position: absolute;
+    transform: scale(2.5, 2.5);
+    padding-left: 27vw;
+    padding-bottom: 15vh;
+}
+
 @media screen and (min-width: 1200px) {
     #projects-title {
         padding-top: 5vh;
@@ -190,6 +201,11 @@ body {
         margin-bottom: 0.6em;
         transition: 0.7s;
         object-fit: cover;
+    }
+
+    .img-one-line {
+        width: 20vw;
+        height: 11vw;
     }
 
     .project:hover img {

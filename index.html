@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+<div id="landing-container">
     <div id="landing">
         <div id="title">
              SREYA GOGINENI
@@ -27,12 +27,19 @@
                 class=" otherish symb-fa fa fa-file"></a></span>
             <span><a
                 href="https://www.linkedin.com/in/sreya-gogineni-09b6961b0/" target="_blank" class="otherish symb-fa fa fa-linkedin"></a></span>
-            <span><a href="#" target="_blank"
+            <span><a href="https://github.com/gosreya" target="_blank"
                 class="otherish symb-fa fa fa-github"></a></span>
             <span class="otherish text-fa">gosreya@umich.edu</span>
         </div>
-        
     </div>
+    <div><p>
+        <span onclick="topFunction()"
+              class="scrollbar otherish symb-fa fa fa-arrow-circle-down"
+              href=""></span>
+        </p>
+    </div>
+</div>
+
 
     <div id="projects">
         <div id="projects-title">
@@ -45,7 +52,9 @@
                             href="https://github.com/rdkit/rdkit/pull/5557"
                             title="xyz2mol pull request" target="_blank"
                             class="ext fa fa-external-link-square"></a> </h2>
-                    <img class="image-right" src="images/xyz2mol.png" alt="organic molecule">
+                    <img class="image-right"
+                         src="images/xyz2mol.png"
+                         alt="organic molecule">
                     <div class="project-spec"> 2022: <span
                             class="technology"> C++ </span> &nbsp <span
                             class="technology"> Python </span>
@@ -70,11 +79,12 @@
             </div>
             <div class="project">
                 <div class="project-content">
-                    <h2> Pokédex <a
+                    <h2> Pokedex <a
                             href="https://github.com/gosreya/pokedex"
                             title="pokedex repo"
                                   target="_blank" class="ext fa fa-external-link-square"></a> </h2>
-                    <img class="image-right" src="images/pikachu.png"
+                    <img class="image-right img-one-line"
+                         src="images/pikachu.png"
                          alt="ascii pikachu">
                     <div class="project-spec"> 2022: <span
                             class="technology"> Python </span> &nbsp <span
@@ -143,6 +153,12 @@
         }
       });
     });
+
+    //
+    var scrollDownBtn = document.getElementById("scrollbar");
+    function topFunction() {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
 
 </script>
 
