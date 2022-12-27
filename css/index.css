@@ -128,7 +128,7 @@ body {
 .scrollbar {
     position: absolute;
     transform: scale(2.5, 2.5);
-    padding-left: 27vw;
+    padding-left: 27.5vw;
     padding-bottom: 15vh;
 }
 
@@ -151,7 +151,6 @@ body {
 @media screen and (max-width: 1200px) {
     #projects-title {
         padding-top: 5vh;
-        padding-left: 4vw;
         font-family: 'Josefin Sans', sans-serif;
         text-align: center;
     }
